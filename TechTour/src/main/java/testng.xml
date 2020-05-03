@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" > <!-- Only once -->
-	<listeners>
-		<listener class-name="com.webdriver.webelementfunction.SuiteMethods"/>
-	</listeners>
+<!--	<listeners>-->
+<!--		<listener class-name=" "/>-->
+<!--	</listeners>-->
 	<test name="ChromeTest" > <!-- Single / Multiple -->
 		<classes> <!-- Single/ Multiple -->
-			<class name="com.webdriver.webelementfunction.WebelementFunctionRunner" />
-			<class name="com.webdriver.wait.WebdriverWaitFunctionRunner" />
+			<class name="REG_Runner" />
+
 		</classes>
 	</test>
-	<test name="FirefoxTest" > <!-- Single / Multiple -->
-		<classes> <!-- Single/ Multiple -->
-			<class name="com.webdriver.iframes.IframesRunner" />
-			<class name="com.n3.WD.browser.browserfunction.BrowserFunctionRunner" />
-		</classes>
-	</test> <!-- Test -->
+
 	<!-- <test name=""> <classes> <class name=""></class> </classes> </test> -->
 </suite> <!-- Suite -->

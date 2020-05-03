@@ -2,9 +2,8 @@ package com.n3.Cucumber;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
-
 import com.n3.WD.support.DriverSvS;
+import org.openqa.selenium.WebDriver;
 
 import cucumber.api.Scenario;
 import io.cucumber.java.After;
@@ -26,17 +25,17 @@ public class GeneralHook {
 	
 	@Before(value="@regression",order = 2)
 	public void setupForRegression(){
-		System.out.println("This is regression suite");
+		System.out.println("=== Regression suite ====");
 	}
 	
 	@Before(value="@smoke")
 	public void setupForSmoke(){
-		System.out.println("This is smoke suite");
+		System.out.println("=== Smoke suite ===");
 	}
 	
 	@Before(order = 1)
 	public void setup() {
-		System.out.println(" This is normal hook");
+		System.out.println("=== Test case ===");
 	}
 	
 	@Before
@@ -51,12 +50,13 @@ public class GeneralHook {
 	public void afterScenario(Scenario scenario) throws IOException {
 		String screenShotFileName = "C:\\Data\\log\\" + scenario.getName().replaceAll(" ", "") + ".jpeg";
 		if(scenario.isFailed()){
-			services.getGeneralSupport().takeScreenShot(screenShotFileName);
+			services.getScreenShotController().takeScreenShot(screenShotFileName);
+
 		}
 		customExtentReporter.createTest(scenario, screenShotFileName);
 		customExtentReporter.writeToReport();
 		if(driver != null){
-	    	driver.quit(); // it will close all the window and stop the web driver
+	    	driver.quit(); //
 	    }
 	}
 	
@@ -73,8 +73,8 @@ public class GeneralHook {
 	
 	private void captureScreenShot(Scenario scenario) {
 		int random = (int)(Math.random() * 1000);
-		services.getGeneralSupport().takeScrenShot("Screenshot", "src" + random +".png");
-		scenario.embed(services.getGeneralSupport().takeScrenShot(), "image/png");
+		services.getScreenShotController().takeScrenShot("Screenshot", "src" + random +".png");
+		scenario.embed(services.getScreenShotController().takeScrenShot(), "image/png");
 	}
 
 }

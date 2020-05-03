@@ -82,7 +82,7 @@ public class CustomExtentReporter {
 	}
 	
 	private String getScenarioTitle(Scenario scenario){
-		return scenario.getName().replaceAll(" ", "");
+		return scenario.getName().replaceAll(" ", " ");
 	}
 	
 

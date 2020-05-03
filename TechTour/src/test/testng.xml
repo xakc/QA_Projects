@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" > <!-- Only once -->
+
+    <test name="ChromeTest" > <!-- Single / Multiple -->
+        <classes> <!-- Single/ Multiple -->
+            <class name="TechTour.BDT.Runners.Registration.REG_Runner" />
+
+        </classes>
+    </test>
+
+    <!-- <test name=""> <classes> <class name=""></class> </classes> </test> -->
+</suite> <!-- Suite -->

@@ -17,20 +17,16 @@ public class HomePageClass extends PageBase {
 
 	}
 
-	@FindBy(how = How.XPATH,using = "//a[text()='Login']")
-	public WebElement nav_login_btn;
 
-	@FindBy(how = How.XPATH,using = "//*[@id=\"main-menu\"]/div/div[2]/ul/li[7]/a")
-	public WebElement navBar_profileMenu;
 
 
 	public PageBase navigate_to_Login_Page() {
 		LoginPageClass loginPage = new LoginPageClass(driver);
 
-		nav_login_btn.click();
-
-		WebDriverWait wait = getWait();
-		wait.until(ExpectedConditions.elementToBeClickable(loginPage.login_btn));
+//		nav_login_btn.click();
+//
+//		WebDriverWait wait = getWait();
+//		wait.until(ExpectedConditions.elementToBeClickable(loginPage.login_btn));
 
 		return loginPage;
 

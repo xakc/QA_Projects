@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import com.n3.WD.utils.ResourceUtils;
+import com.n3.WD.settings.ResourceUtils;
 
 public class CustomChromeDriver implements BrowserConfiguration{
 	
