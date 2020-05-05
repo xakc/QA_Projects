@@ -20,7 +20,9 @@
 
 ## I. Introduction
 
-__TechTour company info: __  Tech Tour group is a private company founded in 1998 with headquarters in Brussels and with offices in Geneva and in Sofia.
+__Tech Tour compnay info:__ 
+ 
+ Tech Tour group is a private company founded in 1998 with headquarters in Brussels and with offices in Geneva and in Sofia.
               The group provides a Pan-European network for high-tech entrepreneurship facilitating investment, partnering and innovation. We believe that entrepreneurship is the main force of innovation, economic growth and sustainability throughout Europe. We help high-tech entrepreneurs and spin-offs achieve their strategic goals by connecting them to investors, corporations, researchers, advisors and of course other specialized entrepreneurs, in person at one of the many events and online through our web community.
 
 
