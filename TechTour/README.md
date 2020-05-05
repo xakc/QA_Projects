@@ -20,7 +20,7 @@
 
 ## I. Introduction
 
-__TechTour__  group is a private company founded in 1998 with headquarters in Brussels and with offices in Geneva and in Sofia.
+__TechTour company info: __  Tech Tour group is a private company founded in 1998 with headquarters in Brussels and with offices in Geneva and in Sofia.
               The group provides a Pan-European network for high-tech entrepreneurship facilitating investment, partnering and innovation. We believe that entrepreneurship is the main force of innovation, economic growth and sustainability throughout Europe. We help high-tech entrepreneurs and spin-offs achieve their strategic goals by connecting them to investors, corporations, researchers, advisors and of course other specialized entrepreneurs, in person at one of the many events and online through our web community.
 
 
@@ -30,11 +30,11 @@ __The recruitment activities for QA are:__
  
  ► Meeting online the Tech Tour team representatives
  
- ► Presenting a QA project for a given Tech Tour assignment 
+ ► Presenting a QA project for a given assignment 
  
 
 
-## II. The Assigemnt info
+## II. Assigment info
 
  ► Conducting a UI/UX testing with Selenium WebDriver
 
@@ -49,10 +49,10 @@ __The recruitment activities for QA are:__
 2. Extent Report for BDT test cases [LINK](https://drive.google.com/open?id=1s6qtDTOvBSQX4B0gm0vIxh_n0kwNcAu-)
 3. Bug Report [LINK](https://drive.google.com/open?id=1pJv5muEOa5I96KEuoPmt19UTKK6dC-B9)
 4. Templates: [Test Case Template](https://drive.google.com/open?id=1bOJKwWEvIDZZVgE5PNuxUPCQre-j-AYf)
-5. Short Video Demo of the test runs [Video lInk]( https://drive.google.com/open?id=1bOJKwWEvIDZZVgE5PNuxUPCQre-j-AYf)
+5. Short Video Demo of the test runs [Video lInk]( https://www.youtube.com/watch?v=-innzxGC3Aw&feature=youtu.be)
 
 
-## V. HOW TO RUN AUTOMATIONS
+## IV. HOW TO RUN AUTOMATIONS
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
  
 - Windows 10 operating system
@@ -71,8 +71,4 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repo on your computer.
 2. Run run_automation.bat.
- 
-### __5. How to run UI tests automation individually__
- 
-1. Run run_ui_automation.bat file at the root location of the repo.
  
