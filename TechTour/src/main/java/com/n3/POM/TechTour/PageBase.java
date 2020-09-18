@@ -15,7 +15,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageBase {
 
-	private WebDriver driver;
+	public WebDriver driver;
+	public   WebDriverWait wait;
 
 	public PageBase(WebDriver driver) {
 		this.driver = driver;

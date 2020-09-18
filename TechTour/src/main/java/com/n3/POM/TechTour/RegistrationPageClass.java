@@ -12,7 +12,7 @@ public class RegistrationPageClass extends PageBase {
 
     private WebDriver driver;
     private TextBox textBox;
-    WebDriverWait wait;
+
 
     public RegistrationPageClass(WebDriver driver){
         super(driver);
@@ -49,17 +49,21 @@ public class RegistrationPageClass extends PageBase {
    //Page methods
     //Fields methods
     public void enter_email(String email) {
-        WebDriverWait wait = getWait();
-        wait.until(ExpectedConditions.visibilityOf(REG_email_FIELD));
+
+        getWait().until(ExpectedConditions.elementToBeClickable(REG_email_FIELD));
+
+
         REG_email_FIELD.isDisplayed();
+        REG_email_FIELD.isEnabled();
 
         REG_email_FIELD.clear();
         REG_email_FIELD.sendKeys(email);
     }
 
     public void enter_password(String pass) {
-        WebDriverWait wait = getWait();
-        wait.until(ExpectedConditions.visibilityOf(REG_password_FIELD));
+        getWait().until(ExpectedConditions.elementToBeClickable(REG_password_FIELD));
+
+
         REG_password_FIELD.isDisplayed();
 
         REG_password_FIELD.clear();
@@ -67,8 +71,9 @@ public class RegistrationPageClass extends PageBase {
     }
 
     public void click_on_signUP_button() {
-        WebDriverWait wait = getWait();
-        wait.until(ExpectedConditions.visibilityOf(REG_signUp_BTN));
+
+        getWait().until(ExpectedConditions.elementToBeClickable(REG_signUp_BTN));
+
         REG_signUp_BTN.isDisplayed();
 
         REG_signUp_BTN.click();
@@ -76,8 +81,8 @@ public class RegistrationPageClass extends PageBase {
 
 
     public void enter_first_name(String firstName) {
-        WebDriverWait wait = getWait();
-        wait.until(ExpectedConditions.visibilityOf(REG_first_name_FIELD));
+        getWait().until(ExpectedConditions.elementToBeClickable(REG_first_name_FIELD));
+
         REG_first_name_FIELD.isDisplayed();
 
         REG_first_name_FIELD.clear();
@@ -85,8 +90,8 @@ public class RegistrationPageClass extends PageBase {
     }
 
     public void enter_last_name(String lastName) {
-        WebDriverWait wait = getWait();
-        wait.until(ExpectedConditions.visibilityOf(REG_last_name_FIELD));
+        getWait().until(ExpectedConditions.elementToBeClickable(REG_last_name_FIELD));
+
         REG_last_name_FIELD.isDisplayed();
 
         REG_last_name_FIELD.clear();

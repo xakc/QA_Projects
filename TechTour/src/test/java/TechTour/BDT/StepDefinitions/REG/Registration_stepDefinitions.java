@@ -50,7 +50,7 @@ public class Registration_stepDefinitions {
 
         String add_random_string = RandomStringUtils.randomAlphanumeric(3);
         techTour.registrationPage.enter_email(add_random_string+email);
-        Thread.sleep(700);
+
 
     }
 
@@ -80,7 +80,7 @@ public class Registration_stepDefinitions {
     @When("The user enters invalid email as {string}")
     public void theUserEntersInvalidEmailAs(String email) throws InterruptedException {
         techTour.registrationPage.enter_email(email);
-        Thread.sleep(1300);
+
     }
 
 

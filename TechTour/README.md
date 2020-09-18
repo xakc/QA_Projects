@@ -10,7 +10,7 @@
 
 [I. INTRODUCTION](#i-introduction)
 
-[II. ASSIGNMENT INFO](#ii-deliverables)
+[II. FrameWork info](#ii-deliverables)
 
 [III. DELIVERABLES](#iii-useful-links)
 
@@ -20,34 +20,51 @@
 
 ## I. Introduction
 
-__Tech Tour compnay info:__ 
+__Tech Tour company info:__ 
  
  Tech Tour group is a private company founded in 1998 with headquarters in Brussels and with offices in Geneva and in Sofia.
-              The group provides a Pan-European network for high-tech entrepreneurship facilitating investment, partnering and innovation. We believe that entrepreneurship is the main force of innovation, economic growth and sustainability throughout Europe. We help high-tech entrepreneurs and spin-offs achieve their strategic goals by connecting them to investors, corporations, researchers, advisors and of course other specialized entrepreneurs, in person at one of the many events and online through our web community.
+              The group provides a Pan-European network for high-tech entrepreneurship facilitating investment, partnering and innovation. TechTour believes that entrepreneurship is the main force of innovation, economic growth and sustainability throughout Europe. The group helps high-tech entrepreneurs and spin-offs achieve their strategic goals by connecting them to investors, corporations, researchers, advisors and of course other specialized entrepreneurs, in person at one of the many events and online through our web community.
 
 
-__Due to the growing business need and the strive for perfection the Bulgarian Software development team is looking for a new team member.__
+__Due to the growing business need and the strive for perfection the Bulgarian Software development team is presenting entire new Web Services.__
 
-__The recruitment activities for QA are:__ 
+__The aim is to to help the online people interaction  and develop different entrepreneurs skills for successful projects.__ 
  
- ► Meeting online the Tech Tour team representatives
- 
- ► Presenting a QA project for a given assignment 
  
 
 
-## II. Assigment info
+## II. FrameWork info
 
- ► Conducting a UI/UX testing with Selenium WebDriver
+ ► Design pattern - Page object model
+ - Providing object repository for the UI elements
+ - Providing custom page methods 
+ - Providing custom page synchronisation 
+ 
+ ► Selenium WebDriver 
+ - Providing custom selenium support methods
+ - Providing custom synchronisation for the project 
+ - Providing browser config/switch option
+ - Providing ScreenShot controller
 
- ► Preparing an Automation test runs report
+ ►BDD with Cucumber
+ - Providing cucumber hook test run management
+ - Providing an ExtendReport integration 
+ - Providing screenshot capturing upon test fail
 
- ► Presenting bug report
+ ► Test management with TestNG 
+ - Providing browser switch option
+ - Providing custom TestNG xlm location
+ - Providing custom TestNG class Runner naming 
+
+ ► Reporting
+ - Extend reporting
+ - SureFire reporting
+ - Allure Reporting
 
 
 ## III. DELIVERABLES
 
-1. Automation FW with Selenium and Cucumber
+1. UI Automation framework
 2. Extent Report for BDT test cases [LINK](https://drive.google.com/open?id=1s6qtDTOvBSQX4B0gm0vIxh_n0kwNcAu-)
 3. Bug Report [LINK](https://drive.google.com/open?id=1pJv5muEOa5I96KEuoPmt19UTKK6dC-B9)
 4. Templates: [Test Case Template](https://drive.google.com/open?id=1bOJKwWEvIDZZVgE5PNuxUPCQre-j-AYf)
