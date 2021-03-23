@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615815295484' stop='1615815305776'>
+    <name>When I am on Home page</name>
+    <title>When I am on Home page</title>
+    <test-cases>
+        <test-case start='1615815295485' status='passed' stop='1615815305772'>
+            <name>I should be able to execute JS code</name>
+            <title>I should be able to execute JS code</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-89.0.4389.90'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

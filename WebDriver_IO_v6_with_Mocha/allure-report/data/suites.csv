@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Mar 15 15:22:38 EET 2021","Mon Mar 15 15:22:56 EET 2021","18705","","I should be able to open Contact us page","","I should be able to open Contact us page","Should send Email to support center","Should send Email to support center",""

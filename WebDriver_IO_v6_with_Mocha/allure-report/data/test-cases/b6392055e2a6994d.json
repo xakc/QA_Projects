@@ -1,0 +1,58 @@
+{
+  "uid" : "b6392055e2a6994d",
+  "name" : "Should send Email to support center",
+  "fullName" : "I should be able to open Contact us page.Should send Email to support center",
+  "historyId" : "fc11a2dc436600ed16fba02bd19e445d",
+  "time" : {
+    "start" : 1615814558127,
+    "stop" : 1615814576832,
+    "duration" : 18705
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "I should be able to open Contact us page"
+  }, {
+    "name" : "testClass",
+    "value" : "I should be able to open Contact us page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should send Email to support center"
+  }, {
+    "name" : "package",
+    "value" : "I should be able to open Contact us page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-89.0.4389.90"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b6392055e2a6994d.json",
+  "parameterValues" : [ "chrome-89.0.4389.90" ]
+}
