@@ -7,26 +7,26 @@ import HomePage from "../pageObjects/HomePage";
 import dataGenerators from "../../utils/DataGenerator";
 import request from "../../node_modules/sync-request";
 
-// // Navigate to specific URL before each test
-// beforeEach(() => {
-//   browser.url("/");
-// });
+// Navigate to specific URL before each test
+beforeEach(() => {
+  browser.url("/");
+});
 
-// describe("This is how we can set Hooks within describe", () => {
-//   beforeEach(() => {
-//     console.log("Hook inside describe block");
-//   });
-// });
+describe("This is how we can set Hooks within describe", () => {
+  beforeEach(() => {
+    console.log("Hook inside describe block");
+  });
+});
 
-// describe("When I am on Home page", () => {
-//   it.only("should have the right title", () => {
-//     browser.getPageTitleCustom();
-//     console.log("Custom command should be printed here!");
-//   });
-//   it.skip("test 2", () => {
-//     console.log("Test Number 2");
-//   });
-// });
+describe("When I am on Home page", () => {
+  it.only("should have the right title", () => {
+    browser.getPageTitleCustom();
+    console.log("Custom command should be printed here!");
+  });
+  it.skip("test 2", () => {
+    console.log("Test Number 2");
+  });
+});
 
 // describe("When I am on Home page 2", () => {
 //   it.only("test 3", () => {
