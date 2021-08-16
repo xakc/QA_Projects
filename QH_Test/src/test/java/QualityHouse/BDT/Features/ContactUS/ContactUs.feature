@@ -1,7 +1,7 @@
-Feature: Registration/SignUp functionality of TechTour Event-Register (TER)
-  As a event unregistered company user,
-  I want to be able to do a registration for event at TechTour
-  so that I can use the web-application features for particular event.
+Feature: Contact us feature
+  As a Quality House website user,
+  I want to be able to do sent a request message
+  so that I can use the web-application features and get some more information.
 
 
   Scenario Outline:Register a new account authentication parameters (email and password) with valid data input
