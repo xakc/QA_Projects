@@ -73,7 +73,7 @@ public class ContactUs_stepDefinitions {
         qualityHouse.contactUsClassPage.enter_name(requester_name);
         qualityHouse.contactUsClassPage.enter_email(requester_email);
         qualityHouse.contactUsClassPage.enter_subject(request_subject);
-        qualityHouse.contactUsClassPage.enter_subject(request_message);
+        qualityHouse.contactUsClassPage.enter_message(request_message);
     }
 
     @And("The user accepts GPDR and submits the message")
@@ -86,8 +86,7 @@ public class ContactUs_stepDefinitions {
     @Then("The request made by the contact us form is successfully sent")
     public void theRequestMadeByTheContactUsFormIsSuccessfullySent() {
         qualityHouse.contactUsClassPage = new ContactUsClass(driver);
-
-
+        qualityHouse.contactUsClassPage.checkSuccessfulMSG();
     }
 
 

@@ -12,6 +12,7 @@ import org.testng.Assert;
 public class ContactUsClass extends PageBase {
 
     public String pageTitle = "Contact Us | Quality House Ltd.";
+    public String confirmationMSG_for_sentRequest = "Your message is sent successfully!";
     private WebDriver driver;
     private TextBox textBox;
 
@@ -45,8 +46,13 @@ public class ContactUsClass extends PageBase {
     public WebElement contactUs_Form_GDPR_checkbox;
 
     //1.5.
-    @FindBy(how = How.XPATH, using = "  //input[@type='submit']")
+    @FindBy(how = How.XPATH, using = "//input[@type='submit']")
     public WebElement contactUs_Form_SendMsg_button;
+
+    //1.6
+    @FindBy(how = How.XPATH, using = "//div[contains(text(),'Your message is sent successfully!')]")
+    public WebElement contactUs_Form_Confirmation_for_sent_MSG;
+
 
     //Page methods
     //Fields methods
@@ -63,13 +69,11 @@ public class ContactUsClass extends PageBase {
     public void enter_email(String email) {
         getWait().until(ExpectedConditions.elementToBeClickable(contactUs_Form_requester_EmailInfo));
         contactUs_Form_requester_EmailInfo.isDisplayed();
-
         contactUs_Form_requester_EmailInfo.clear();
         contactUs_Form_requester_EmailInfo.sendKeys(email);
     }
 
     public void enter_subject(String subject) throws InterruptedException {
-        Thread.sleep(4000);
         getWait().until(ExpectedConditions.elementToBeClickable(contactUs_Form_Subject));
         contactUs_Form_Subject.isDisplayed();
         contactUs_Form_Subject.clear();
@@ -97,7 +101,13 @@ public class ContactUsClass extends PageBase {
     }
 
     public void checkContactUsPageURL() {
-        Assert.assertEquals(driver.getTitle(),pageTitle);
+        Assert.assertEquals(driver.getTitle(), pageTitle);
+    }
+
+    public void checkSuccessfulMSG() {
+        getWait().until(ExpectedConditions.visibilityOf(contactUs_Form_Confirmation_for_sent_MSG));
+        contactUs_Form_Confirmation_for_sent_MSG.isDisplayed();
+        Assert.assertEquals(contactUs_Form_Confirmation_for_sent_MSG.getText(), confirmationMSG_for_sentRequest);
     }
 
     public void checkContactUsHeaderPage() {
